@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/choices.js/public/assets/styles/base.min.css">
+    <link rel="stylesheet" href="node_modules/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="node_modules/choices.js/public/assets/scripts/choices.min.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script src="index.js"></script>
+    <title>Галерея</title>
+</head>
+<body>
+  <div class="all">
+    <header class="container">
+      <div class="header-container">
+        <nav id="menu" class="menu">
+          <button class="button menu-button" aria-label="Закрыть бургер меню" id="close">
+          <span class="menu-icon"></span>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="#">О нас</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="#">Галерея</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="#">Каталог</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="#">События</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="#">Издания</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="#">Проекты</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button aria-label="Бургер меню" id="burger" class="button burger-button">
+          <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.699997)" fill="white"/>
+            <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
+            <path d="M24 25.0478H0V28.7H24V25.0478Z" fill="white"/>
+            </svg>
+        </button>
+        <div class="header-block-top">
+        <a class="header-logo"><img src="img/Logo.png" alt="Логотип"></a>
+            <nav class="header-nav-top">
+                <ul class="header-list">
+                    <li class="header-list-item">
+                        <a class="header-list-link" href="#">О нас</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a class="header-list-link" href="#">Галерея</a>
+                        </li>
+                    <li class="header-list-item">
+                        <a class="header-list-link" href="#">Каталог</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a class="header-list-link" href="#">События</a>
+                        </li>
+                    <li class="header-list-item">
+                        <a class="header-list-link" href="#">Издания</a>
+                        </li>
+                    <li class="header-list-item">
+                        <a class="header-list-link" href="#">Проекты</a>
+                        </li>
+                    <li class="header-list-item">
+                        <a class="header-list-link" href="#">Контакты</a>
+                        </li>
+                </ul>
+            </nav>
+            <a class="header-entrance-link" href="#" tabindex="0">
+              <svg class="arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+              </svg>
+              <span class="entrance">Войти</span>
+            </a>
+        </div>
+        <div class="header-block-bottom">
+        <nav class="header-nav-bottom">
+            <button id="realism" class="button header-button-bottom">Реализм
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 5L6 10L0.999998 5" stroke="white"/>
+</svg>
+            </button>
+            <div class="header-scrollbar-bottom realism" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header-list-artists">
+                <li class="list-artists-item tintoretto"><a class="list-artists-link" href="#">Тинторетто</a></li>
+                <li class="list-artists-item friedrich"><a class="list-artists-link" href="#">Фридрих</a></li>
+                <li class="list-artists-item leonardo"><a class="list-artists-link" href="#">Леонардо</a></li>
+                <li class="list-artists-item verrocchio"><a class="list-artists-link" href="#">Вероккьо</a></li>
+            </ul>
+          </div>
+            <button id="impressionism" class="button header-button-bottom">Импрессионизм
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 5L6 10L0.999998 5" stroke="white"/>
+</svg>
+            </button>
+            <div class="header-scrollbar-bottom impressionism" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header-list-artists">
+                <li class="list-artists-item mone"><a class="list-artists-link" href="#">Моне</a></li>
+                <li class="list-artists-item sisley"><a class="list-artists-link" href="#">Сислей</a></li>
+                <li class="list-artists-item mane"><a class="list-artists-link" href="#">Мане</a></li>
+                <li class="list-artists-item renuar"><a class="list-artists-link" href="#">Ренуар</a></li>
+            </ul>
+          </div>
+            <button id="post-impressionism" class="button header-button-bottom">Постимпрессионизм
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 5L6 10L0.999998 5" stroke="white"/>
+</svg>
+            </button>
+            <div class="header-scrollbar-bottom post-impressionism" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header-list-artists">
+                <li class="list-artists-item van_gog"><a class="list-artists-link" href="#">Ван Гог</a></li>
+                <li class="list-artists-item sezann"><a class="list-artists-link" href="#">Сезанн</a></li>
+                <li class="list-artists-item gogen"><a class="list-artists-link" href="#">Гоген</a></li>
+                <li class="list-artists-item sera"><a class="list-artists-link" href="#">Сёра</a></li>
+            </ul>
+          </div>
+            <button id="vanguard" class="button header-button-bottom">Авангард
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 5L6 10L0.999998 5" stroke="white"/>
+</svg>
+            </button>
+            <div class="header-scrollbar-bottom vanguard" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header-list-artists">
+                <li class="list-artists-item kandinsky"><a class="list-artists-link" href="#">Кандинский</a></li>
+                <li class="list-artists-item marinetti"><a class="list-artists-link" href="#">Маринетти</a></li>
+                <li class="list-artists-item malevich"><a class="list-artists-link" href="#">Малевич</a></li>
+                <li class="list-artists-item picasso"><a class="list-artists-link" href="#">Пикассо</a></li>
+            </ul>
+          </div>
+            <button id="futurism" class="button header-button-bottom">Футуризм
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 5L6 10L0.999998 5" stroke="white"/>
+</svg>
+
+            </button>
+            <div class="header-scrollbar-bottom futurism" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header-list-artists">
+                <li class="list-artists-item karra"><a class="list-artists-link" href="#">Карра</a></li>
+                <li class="list-artists-item pratella"><a class="list-artists-link" href="#">Прателла</a></li>
+                <li class="list-artists-item severini"><a class="list-artists-link" href="#">Северини</a></li>
+                <li class="list-artists-item balla"><a class="list-artists-link" href="#">Балла</a></li>
+            </ul>
+          </div>
+        </nav>
+          <form class="search" tabindex="0">
+          <input class="search-input input" type="search" placeholder="Поиск по сайту">
+          <button class="button search-button" aria-label="Поиск">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+              </svg>
+          </button>
+        </form>
+        </div>
+            </div>
+     </header>
+     <main class="container">
+      <section class="banner-box">
+        <div class="banner-block">
+          <h1 class="banner-title">Прикоснитесь к прекрасному</h1>
+          <p class="text banner-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+          <button class="button banner-button">Подписаться на рассылку</button>
+          </div>
+        <div class="swiper-container swiper-no-swiping">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="banner-slide1"></div>
+                </div>
+              <div class="swiper-slide">
+                  <div class="banner-slide2"></div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="banner-slide3"></div>
+              </div>
+          </div>
+          </div>
+       </section>
+       <section class="about_us-box">
+         <h2 class="title about_us-title">О нас</h2>
+         <p class="text about_us-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+       </section>
+       <section class="gallery-box">
+        <div class="gallery-select-block">
+         <h2 class="title gallery-title">Галерея</h2>
+         <span class="gallery-filter">Фильтровать по:</span>
+         <select name="select" class="gallery-select">
+           <option value="author">Автор</option>
+           <option value="direction">Направление</option>
+           <option value="technic">Техника</option>
+         </select>
+           </div>
+           <div class="gallery-slider-block">
+          <div class="gallery-slider-container">
+            <div class="gallery-slider-control">
+              <div class="swiper-button-prev swiper-button-prev1">
+                <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 11L0.999995 6L6 0.999998" stroke="white"/>
+                  </svg>
+              </div>
+              <div class="swiper-pagination swiper-pagination1"></div>
+            <div class="swiper-button-next swiper-button-next1">
+              <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 11L10 6L5 0.999998" stroke="white"/>
+                </svg>
+            </div>
+            </div>
+          <div class="swiper-container_1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide1"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide2"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide3"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide4"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide5"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide6"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide7"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide8"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide9"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide10"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide11"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide12"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide13"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide14"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide15"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide16"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide17"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide18"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide19"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide20"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide21"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide22"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide23"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide24"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide25"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide26"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide27"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide28"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide29"></div></div>
+                <div class="swiper-slide swiper-slide1"><div class="gallery-slide30"></div></div>
+            </div>
+        </div>
+          </div>
+          <p class="text gallery-text">Вам предоставляется 10 бесплатных скачиваний. 
+            Для увеличения количества скачиваний <a class="gallery-link">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
+           </p>
+          </div>
+       </section>
+     </main>
+    </div>
+</body>
+</html>
