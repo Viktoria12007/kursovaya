@@ -59,55 +59,56 @@ window.addEventListener('DOMContentLoaded', function(){
       position: 'bottom',
       })
   });
-      document.querySelector('#realism').addEventListener('click', function() {
-        let a = document.querySelector('.realism');
-        if (a.style.display==='none') { 
-        a.style.display ='block';
-        }
-        else {
-          a.style.display = 'none';
-        }
+      
+      let listButtons = document.querySelectorAll('.header-button-bottom');
+      listButtons.forEach(function(item){
+        item.addEventListener('click', function(event) {
+          event.preventDefault();
+          let listId = this.getAttribute('direction');
+          let listElem = document.querySelector('.header-scrollbar-bottom[direction="' + listId + '"]');
+          if (listElem.style.display==='none') { 
+            listElem.style.display ='block';
+            }
+            else {
+              listElem.style.display = 'none';
+            }
+         });
+        });
+
+      let modalButtons = document.querySelectorAll('.js-open-modal');
+      let closeButtons = document.querySelectorAll('.js-modal-close');
+      modalButtons.forEach(function(item){
+        item.addEventListener('click', function(event) {
+          event.preventDefault();
+          let modalId = this.getAttribute('data-modal');
+          let modalElem = document.querySelector('.gallery-modal_window[data-modal="' + modalId + '"]');
+          modalElem.style.display = 'flex';
+         });
+        });
+         closeButtons.forEach(function(item) {
+          item.addEventListener('click', function(e) {
+            let parentModal = this.closest('.gallery-modal_window');
+            parentModal.style.display = 'none';
+          });
+    });
+      
+      let searchButton = document.querySelector('.search-button');
+      let searchCloseButton = document.querySelector('.search-close-button');
+      let search = document.querySelector('.search');
+      let searchInput = document.querySelector('.search-input');
+      searchButton.addEventListener('click', function(event) {
+      event.preventDefault();
+      search.classList.toggle('search-is_active');
+      searchInput.classList.toggle('search-input-is_active');
+      searchButton.classList.toggle('search-button-is_active');
+      searchCloseButton.classList.toggle('search-close-button--appear');
       });
-      document.querySelector('#impressionism').addEventListener('click', function() {
-        let b = document.querySelector('.impressionism');
-        if (b.style.display==='none') { 
-        b.style.display ='block';
-        }
-        else {
-          b.style.display = 'none';
-        }
-      });
-      document.querySelector('#post-impressionism').addEventListener('click', function() {
-        let c = document.querySelector('.post-impressionism');
-        if (c.style.display==='none') { 
-        c.style.display ='block';
-        }
-        else {
-          c.style.display = 'none';
-        }
-      });
-      document.querySelector('#vanguard').addEventListener('click', function() {
-        let d = document.querySelector('.vanguard');
-        if (d.style.display==='none') { 
-        d.style.display ='block';
-        }
-        else {
-          d.style.display = 'none';
-        }
-      });
-      document.querySelector('#futurism').addEventListener('click', function() {
-        let e = document.querySelector('.futurism');
-        if (e.style.display==='none') { 
-        e.style.display ='block';
-        }
-        else {
-          e.style.display = 'none';
-        }
-      });
-      document.querySelector('#burger').addEventListener('click', function() {
-      document.querySelector('#menu').classList.toggle('is-active')
-      })
-      document.querySelector('#close').addEventListener('click', function() {
-      document.querySelector('#menu').classList.remove('is-active')
-      })
+
+      searchCloseButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        search.classList.remove('search-is_active');
+        searchInput.classList.remove('search-input-is_active');
+        searchButton.classList.remove('search-button-is_active');
+        searchCloseButton.classList.remove('search-close-button--appear');
+        });
   })

@@ -22,34 +22,6 @@
   <div class="all">
     <header class="container">
       <div class="header-container">
-        <nav id="menu" class="menu">
-          <button class="button menu-button" aria-label="Закрыть бургер меню" id="close">
-          <span class="menu-icon"></span>
-          </button>
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">О нас</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">Галерея</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">Каталог</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">События</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">Издания</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">Проекты</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
         <button aria-label="Бургер меню" id="burger" class="button burger-button">
           <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.699997)" fill="white"/>
@@ -59,7 +31,7 @@
         </button>
         <div class="header-block-top">
         <a class="header-logo"><img src="img/Logo.png" alt="Логотип"></a>
-            <nav class="header-nav-top">
+            <div class="header-nav-top">
                 <ul class="header-list">
                     <li class="header-list-item">
                         <a class="header-list-link" href="#">О нас</a>
@@ -83,7 +55,7 @@
                         <a class="header-list-link" href="#">Контакты</a>
                         </li>
                 </ul>
-            </nav>
+            </div>
             <a class="header-entrance-link" href="#" tabindex="0">
               <svg class="arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
@@ -93,12 +65,12 @@
         </div>
         <div class="header-block-bottom">
         <nav class="header-nav-bottom">
-            <button id="realism" class="button header-button-bottom">Реализм
+            <button direction="realism" class="button header-button-bottom">Реализм
               <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11 5L6 10L0.999998 5" stroke="white"/>
 </svg>
             </button>
-            <div class="header-scrollbar-bottom realism" data-simplebar data-simplebar-auto-hide="false">
+            <div class="header-scrollbar-bottom" style="display:none" direction="realism" data-simplebar data-simplebar-auto-hide="false">
               <ul class="header-list-artists">
                 <li class="list-artists-item tintoretto"><a class="list-artists-link" href="#">Тинторетто</a></li>
                 <li class="list-artists-item friedrich"><a class="list-artists-link" href="#">Фридрих</a></li>
@@ -106,12 +78,12 @@
                 <li class="list-artists-item verrocchio"><a class="list-artists-link" href="#">Вероккьо</a></li>
             </ul>
           </div>
-            <button id="impressionism" class="button header-button-bottom">Импрессионизм
+            <button direction="impressionism" class="button header-button-bottom">Импрессионизм
               <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11 5L6 10L0.999998 5" stroke="white"/>
 </svg>
             </button>
-            <div class="header-scrollbar-bottom impressionism" data-simplebar data-simplebar-auto-hide="false">
+            <div class="header-scrollbar-bottom" style="display:none" direction="impressionism" data-simplebar data-simplebar-auto-hide="false">
               <ul class="header-list-artists">
                 <li class="list-artists-item mone"><a class="list-artists-link" href="#">Моне</a></li>
                 <li class="list-artists-item sisley"><a class="list-artists-link" href="#">Сислей</a></li>
@@ -119,12 +91,12 @@
                 <li class="list-artists-item renuar"><a class="list-artists-link" href="#">Ренуар</a></li>
             </ul>
           </div>
-            <button id="post-impressionism" class="button header-button-bottom">Постимпрессионизм
+            <button direction="post-impressionism" class="button header-button-bottom">Постимпрессионизм
               <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11 5L6 10L0.999998 5" stroke="white"/>
 </svg>
             </button>
-            <div class="header-scrollbar-bottom post-impressionism" data-simplebar data-simplebar-auto-hide="false">
+            <div class="header-scrollbar-bottom" style="display:none" direction="post-impressionism" data-simplebar data-simplebar-auto-hide="false">
               <ul class="header-list-artists">
                 <li class="list-artists-item van_gog"><a class="list-artists-link" href="#">Ван Гог</a></li>
                 <li class="list-artists-item sezann"><a class="list-artists-link" href="#">Сезанн</a></li>
@@ -132,12 +104,12 @@
                 <li class="list-artists-item sera"><a class="list-artists-link" href="#">Сёра</a></li>
             </ul>
           </div>
-            <button id="vanguard" class="button header-button-bottom">Авангард
+            <button direction="vanguard" class="button header-button-bottom">Авангард
               <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11 5L6 10L0.999998 5" stroke="white"/>
 </svg>
             </button>
-            <div class="header-scrollbar-bottom vanguard" data-simplebar data-simplebar-auto-hide="false">
+            <div class="header-scrollbar-bottom" style="display:none" direction="vanguard" data-simplebar data-simplebar-auto-hide="false">
               <ul class="header-list-artists">
                 <li class="list-artists-item kandinsky"><a class="list-artists-link" href="#">Кандинский</a></li>
                 <li class="list-artists-item marinetti"><a class="list-artists-link" href="#">Маринетти</a></li>
@@ -145,13 +117,13 @@
                 <li class="list-artists-item picasso"><a class="list-artists-link" href="#">Пикассо</a></li>
             </ul>
           </div>
-            <button id="futurism" class="button header-button-bottom">Футуризм
+            <button direction="futurism" class="button header-button-bottom">Футуризм
               <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11 5L6 10L0.999998 5" stroke="white"/>
 </svg>
 
             </button>
-            <div class="header-scrollbar-bottom futurism" data-simplebar data-simplebar-auto-hide="false">
+            <div class="header-scrollbar-bottom" style="display:none" direction="futurism" data-simplebar data-simplebar-auto-hide="false">
               <ul class="header-list-artists">
                 <li class="list-artists-item karra"><a class="list-artists-link" href="#">Карра</a></li>
                 <li class="list-artists-item pratella"><a class="list-artists-link" href="#">Прателла</a></li>
@@ -166,6 +138,14 @@
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+              </svg>
+          </button>
+          <button class="button search-close-button" aria-label="Закрыть поиск">
+            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.7">
+              <rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 7.62939e-06)" fill="white"/>
+              <rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+              </g>
               </svg>
           </button>
         </form>
@@ -224,38 +204,850 @@
             </div>
           <div class="swiper-container_1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide1"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide2"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide3"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide4"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide5"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide6"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide7"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide8"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide9"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide10"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide11"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide12"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide13"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide14"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide15"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide16"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide17"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide18"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide19"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide20"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide21"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide22"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide23"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide24"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide25"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide26"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide27"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide28"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide29"></div></div>
-                <div class="swiper-slide swiper-slide1"><div class="gallery-slide30"></div></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide1"><div class="gallery-slide1">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide2"><div class="gallery-slide2">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide3"><div class="gallery-slide3">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide4"><div class="gallery-slide4">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide5"><div class="gallery-slide5">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide6"><div class="gallery-slide6">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide7"><div class="gallery-slide7">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide8"><div class="gallery-slide8">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide9"><div class="gallery-slide9">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide10"><div class="gallery-slide10">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide11"><div class="gallery-slide11">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide12"><div class="gallery-slide12">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide13"><div class="gallery-slide13">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide14"><div class="gallery-slide14">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide15"><div class="gallery-slide15">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide16"><div class="gallery-slide16">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide17"><div class="gallery-slide17">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide18"><div class="gallery-slide18">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide19"><div class="gallery-slide19">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide20"><div class="gallery-slide20">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide21"><div class="gallery-slide21">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide22"><div class="gallery-slide22">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide23"><div class="gallery-slide23">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide24"><div class="gallery-slide24">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide25"><div class="gallery-slide25">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide26"><div class="gallery-slide26">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide27"><div class="gallery-slide27">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide28"><div class="gallery-slide28">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide29"><div class="gallery-slide29">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
+                <div class="swiper-slide swiper-slide1"><a class="gallery-slide-link js-open-modal" href="#" data-modal="gallery-slide30"><div class="gallery-slide30">
+                  <div class="gallery-background_active">
+                  <div class="gallery-background_hover">
+                    <svg width="81" height="79" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="25.1624" height="6.2906" transform="matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z" fill="white"/>
+                      <path d="M42 24L42 49L47.9954 49L47.9955 24L42 24Z" fill="white"/>
+                      <path d="M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  </div>
+                </div></a></div>
             </div>
         </div>
+        <div class="gallery-modal_window" data-modal="gallery-slide1">
+          <div picture="gallery-modal_picture1"></div>
+          <div class="gallery-modal_description">
+            <button class="gallery-modal_button js-modal-close">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+                </svg>                
+            </button>
+            <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+          <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+        <h4 class="gallery-small_subtitle">1931-1932</h4>
+        <p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+          как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+      </div>
+      </div>
+      <div class="gallery-modal_window" data-modal="gallery-slide2">
+        <div picture="gallery-modal_picture2"></div>
+        <div class="gallery-modal_description">
+          <button class="gallery-modal_button js-modal-close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+              </svg>                
+          </button>
+          <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+        <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+      <h4 class="gallery-small_subtitle">1931-1932</h4>
+      <p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+        как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+    </div>
+    </div>
+    <div class="gallery-modal_window" data-modal="gallery-slide3">
+      <div picture="gallery-modal_picture3"></div>
+      <div class="gallery-modal_description">
+        <button class="gallery-modal_button js-modal-close">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+            </svg>                
+        </button>
+        <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+      <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+    <h4 class="gallery-small_subtitle">1931-1932</h4>
+    <p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+      как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+  </div>
+  </div>
+  <div class="gallery-modal_window" data-modal="gallery-slide4">
+    <div picture="gallery-modal_picture4"></div>
+    <div class="gallery-modal_description">
+      <button class="gallery-modal_button js-modal-close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+          </svg>                
+      </button>
+      <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+    <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+  <h4 class="gallery-small_subtitle">1931-1932</h4>
+  <p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+    как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>   
+<div class="gallery-modal_window" data-modal="gallery-slide5">
+  <div picture="gallery-modal_picture5"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>     
+<div class="gallery-modal_window" data-modal="gallery-slide6">
+  <div picture="gallery-modal_picture6"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>   
+<div class="gallery-modal_window" data-modal="gallery-slide7">
+  <div picture="gallery-modal_picture7"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide8">
+  <div picture="gallery-modal_picture8"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide9">
+  <div picture="gallery-modal_picture9"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide10">
+  <div picture="gallery-modal_picture10"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide11">
+  <div picture="gallery-modal_picture11"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide12">
+  <div picture="gallery-modal_picture12"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide13">
+  <div picture="gallery-modal_picture13"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide14">
+  <div picture="gallery-modal_picture14"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide15">
+  <div picture="gallery-modal_picture15"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide16">
+  <div picture="gallery-modal_picture16"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide17">
+  <div picture="gallery-modal_picture17"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide18">
+  <div picture="gallery-modal_picture18"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide19">
+  <div picture="gallery-modal_picture19"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide20">
+  <div picture="gallery-modal_picture20"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide21">
+  <div picture="gallery-modal_picture21"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide22">
+  <div picture="gallery-modal_picture22"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide23">
+  <div picture="gallery-modal_picture23"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide24">
+  <div picture="gallery-modal_picture24"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide25">
+  <div picture="gallery-modal_picture25"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide26">
+  <div picture="gallery-modal_picture26"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide27">
+  <div picture="gallery-modal_picture27"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide28">
+  <div picture="gallery-modal_picture28"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide29">
+  <div picture="gallery-modal_picture29"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
+<div class="gallery-modal_window" data-modal="gallery-slide30">
+  <div picture="gallery-modal_picture30"></div>
+  <div class="gallery-modal_description">
+    <button class="gallery-modal_button js-modal-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+        </svg>                
+    </button>
+    <h2 class="gallery-big_subtitle">Каземир Малевич</h2>
+  <h3 class="gllery-middle_subtitle">"Женщина с граблями"</h3>
+<h4 class="gallery-small_subtitle">1931-1932</h4>
+<p class="gallery-modal_text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, 
+  как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+</div>
+</div>
           </div>
           <p class="text gallery-text">Вам предоставляется 10 бесплатных скачиваний. 
             Для увеличения количества скачиваний <a class="gallery-link">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
